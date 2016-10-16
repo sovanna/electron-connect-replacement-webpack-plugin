@@ -1,0 +1,33 @@
+{
+  "name": "electron-connect-replacement-webpack-plugin",
+  "version": "1.0.0",
+  "description": "connect webpack project (e.g using webpack with react) to an Electron app",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "NODE_ENV=development ./node_modules/.bin/nodemon --watch src/main.js -e js src/main.js --exec babel-node",
+    "build": "babel src -d dist --presets es2015,stage-2"
+  },
+  "repository": "https://github.com/sovanna/electron-connect-replacement-webpack-plugin",
+  "keywords": [
+    "webpack",
+    "electron",
+    "electron-connect"
+  ],
+  "author": "Sovanna Hing <sovanna.hing@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-eslint": "^7.0.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-2": "^6.17.0",
+    "classnames": "^2.2.5",
+    "electron-connect": "^0.6.0",
+    "eslint": "^3.8.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "electron": "^1.4.3"
+  }
+}
